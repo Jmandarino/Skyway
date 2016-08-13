@@ -57,20 +57,98 @@
                         <img src="assets/images/skyway/logo.jpg" alt="Skyway Pest Management" />
                     </a>
 
-
+                    <!-- 
+							Top Nav 
+							
+							AVAILABLE CLASSES:
+							submenu-dark = dark sub menu
+						-->
                     <div class="navbar-collapse pull-right nav-main-collapse collapse">
                         <nav class="nav-main">
 
+                            <!--
+									NOTE
+									
+									For a regular link, remove "dropdown" class from LI tag and "dropdown-toggle" class from the href.
+									Direct Link Example: 
+
+									<li>
+										<a href="#">HOME</a>
+									</li>
+								-->
                             <ul id="topMain" class="nav nav-pills nav-main">
 
-                                <li class="">
+                                <li class="active">
                                     <!-- HOME -->
                                     <a class="" href="index.html">
 											HOME
 										</a>
-
-
                                 </li>
+
+
+                                <li class="dropdown">
+                                    <!-- Services -->
+                                    <a class="dropdown-toggle">
+											RESIDENTIAL
+										</a>
+                                    <ul class="dropdown-menu">
+                                        <li class="">
+                                            <a class="" href="Residential.html">
+													RESIDENTIAL/BUG INSURANCE
+												</a>
+                                        </li>
+                                        <!-- item end -->
+
+                                        <li class="">
+                                            <a class="" href="#">
+													PESTS
+												</a>
+                                        </li>
+
+                                        <li class="">
+                                            <a class="" href="Residential.html#home">
+													NEW HOME INPSECTION
+												</a>
+                                        </li>
+
+                                        <li class="">
+                                            <a class="" href="#">
+													TERMITIES
+												</a>
+                                        </li>
+
+                                        <li class="">
+                                            <a class="" href="#">
+													BEDBUGS
+												</a>
+                                        </li>
+
+                                    </ul>
+                                    <!-- end of drop down menu -->
+                                </li>
+                                <!-- end of Residential -->
+
+                                <li class="dropdown">
+                                    <!-- Services -->
+                                    <a class="dropdown-toggle">
+											COMMERCIAL
+										</a>
+                                    <ul class="dropdown-menu">
+                                        <li class="">
+                                            <a class="" href="commercial.html">
+													COMMERCIAL SERVICES
+												</a>
+                                        </li>
+                                        <li class="">
+                                            <a class="" href="IPM.html">
+													INTEGRATED PEST MANAGEMENT (IPM)
+												</a>
+                                        </li>
+
+                                    </ul>
+                                </li>
+
+
                                 <li class="">
                                     <!-- PAGES -->
                                     <a class="" href="about.html">
@@ -79,39 +157,7 @@
 
                                 </li>
 
-                                <li class="dropdown">
-                                    <!-- Services -->
-                                    <a class="dropdown-toggle" href="services.html">
-											SERVICES
-										</a>
-                                    <ul class="dropdown-menu">
-                                        <li class="">
-                                            <a class="" href="Residential.html">
-													RESIDENTIAL
-												</a>
-                                        </li>
-                                        <!-- item end -->
-
-                                        <li class="">
-                                            <a class="" href="commercial.html">
-													COMMERCIAL
-												</a>
-                                        </li>
-
-                                        <li class="">
-                                            <a class="" href="IPM.html">
-													INTEGRATED PEST MANAGEMENT (IPM)
-												</a>
-                                        </li>
-
-                                    </ul>
-                                    <!-- end of drop down menu -->
-                                </li>
-                                <!-- end of services -->
-
-
-
-                                <li class="active">
+                                <li class="">
                                     <!-- Contact -->
                                     <a class="" href="contact.html">
 											
@@ -124,12 +170,12 @@
 
                                 <li class="dropdown">
                                     <!-- Resources -->
-                                    <a class="dropdown-toggle" href="#">
+                                    <a class="dropdown-toggle" href="">
 											RESOURCES
 										</a>
                                     <ul class="dropdown-menu">
                                         <li class="">
-                                            <a class="" href="#">
+                                            <a class="" href="pests.html">
 													Pest info
 												</a>
                                         </li>
@@ -157,170 +203,174 @@
         </div>
 
 
-        <section class="page-header">
-            <div class="container">
-
-                <h1>CONTACT</h1>
+    </div>
 
 
-            </div>
-        </section>
-        <!-- /PAGE HEADER -->
+    <section class="page-header">
+        <div class="container">
+
+            <h1>CONTACT</h1>
+
+
+        </div>
+    </section>
+    <!-- /PAGE HEADER -->
 
 
 
 
-        <!-- -->
-        <section>
-            <div class="container">
+    <!-- -->
+    <section>
+        <div class="container">
 
-                <div class="row">
+            <div class="row">
 
-                    <!-- FORM -->
-                    <div class="col-md-8 col-sm-8">
+                <!-- FORM -->
+                <div class="col-md-8 col-sm-8">
 
-                        <h3>Request a Quote <strong><em>Today!</em></strong></h3>
-
-
-                        <!-- Alert Success -->
-                        <div id="alert_success" class="alert alert-success margin-bottom-30">
-                            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-                            <strong>Thank You!</strong> Your message successfully sent!
-                        </div>
-                        <!-- /Alert Success -->
+                    <h3>Request a Quote <strong><em>Today!</em></strong></h3>
 
 
-                        <!-- Alert Failed -->
-                        <div id="alert_failed" class="alert alert-danger margin-bottom-30">
-                            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-                            <strong>[SMTP] Error!</strong> Internal server error!
-                        </div>
-                        <!-- /Alert Failed -->
+                    <!-- Alert Success -->
+                    <div id="alert_success" class="alert alert-success margin-bottom-30">
+                        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                        <strong>Thank You!</strong> Your message successfully sent!
+                    </div>
+                    <!-- /Alert Success -->
 
 
-                        <!-- Alert Mandatory -->
-                        <div id="alert_mandatory" class="alert alert-danger margin-bottom-30">
-                            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-                            <strong>Sorry!</strong> You need to complete all mandatory (*) fields!
-                        </div>
-                        <!-- /Alert Mandatory -->
+                    <!-- Alert Failed -->
+                    <div id="alert_failed" class="alert alert-danger margin-bottom-30">
+                        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                        <strong>[SMTP] Error!</strong> Internal server error!
+                    </div>
+                    <!-- /Alert Failed -->
 
 
-                        <form action="https://formspree.io/joeymandarino@gmail.com" method="post" enctype="multipart/form-data">
-                            <fieldset>
-                                <!-- <input type="hidden" name="action" value="contact_send" />-->
-
-                                <div class="row">
-                                    <div class="form-group">
-                                        <div class="col-md-4">
-                                            <label for="contact:name">Full Name *</label>
-                                            <input required type="text" value="" class="form-control" name="First-Name" id="contact:name">
-                                        </div>
-                                        <div class="col-md-4">
-                                            <label for="contact:email">E-mail Address *</label>
-                                            <input required type="email" value="" class="form-control" name="email" id="contact:email">
-                                        </div>
-                                        <div class="col-md-4">
-                                            <label for="contact:phone">Phone</label>
-                                            <input type="text" value="" class="form-control" name="phone" id="contact:phone">
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="row">
-                                    <div class="form-group">
-                                        <div class="col-md-8">
-                                            <label for="contact:subject">Subject *</label>
-                                            <input required type="text" value="" class="form-control" name="subject" id="contact:subject">
-                                        </div>
-                                        <div class="col-md-4">
-                                            <label for="contact_department">Type of Service Needed</label>
-                                            <select class="form-control pointer" name="Service">
-                                                <option value="">--- Select ---</option>
-                                                <option value="Residential">Residential</option>
-                                                <option value="Commerical">Commerical</option>
-                                                <option value="Other">Other</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="form-group">
-                                        <div class="col-md-12">
-                                            <label for="contact:message">Message *</label>
-                                            <textarea required maxlength="10000" rows="8" class="form-control" name="message" id="contact:message"></textarea>
-                                        </div>
-                                    </div>
-                                </div>
+                    <!-- Alert Mandatory -->
+                    <div id="alert_mandatory" class="alert alert-danger margin-bottom-30">
+                        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                        <strong>Sorry!</strong> You need to complete all mandatory (*) fields!
+                    </div>
+                    <!-- /Alert Mandatory -->
 
 
-                            </fieldset>
+                    <form action="https://formspree.io/joeymandarino@gmail.com" method="post" enctype="multipart/form-data">
+                        <fieldset>
+                            <!-- <input type="hidden" name="action" value="contact_send" />-->
 
                             <div class="row">
-                                <div class="col-md-12">
-
-                                    <input type="text" name="_gotcha" style="display:none" />
-                                    <!--  on submit stay on page-->
-                                    <input type="hidden" name="_next" value="http://127.0.0.1:49480/Clients/Skyway/contact.html" />
-                                    <!-- email subject-->
-                                    <input type="hidden" name="_subject" value="NEW Quote From skywaypest.com" />
-
-                                    <button type="submit" class="btn btn-primary"><i class="fa fa-check"></i> Request Quote</button>
+                                <div class="form-group">
+                                    <div class="col-md-4">
+                                        <label for="contact:name">Full Name *</label>
+                                        <input required type="text" value="" class="form-control" name="First-Name" id="contact:name">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label for="contact:email">E-mail Address *</label>
+                                        <input required type="email" value="" class="form-control" name="email" id="contact:email">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label for="contact:phone">Phone *</label>
+                                        <input required type="text" value="" class="form-control" name="phone" id="contact:phone">
+                                    </div>
                                 </div>
                             </div>
-                        </form>
 
-                    </div>
-                    <!-- /FORM -->
+                            <div class="row">
+                                <div class="form-group">
+                                    <div class="col-md-8">
+                                        <label for="contact:subject">Subject *</label>
+                                        <input required type="text" value="" class="form-control" name="subject" id="contact:subject">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label for="contact_department">Type of Service Needed</label>
+                                        <select class="form-control pointer" name="Service">
+                                            <option value="">--- Select ---</option>
+                                            <option value="Residential">Residential</option>
+                                            <option value="Commerical">Commerical</option>
+                                            <option value="Other">Other</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group">
+                                    <div class="col-md-12">
+                                        <label for="contact:message">Message *</label>
+                                        <textarea required maxlength="10000" rows="8" class="form-control" name="message" id="contact:message"></textarea>
+                                    </div>
+                                </div>
+                            </div>
 
 
-                    <!-- INFO -->
-                    <div class="col-md-4 col-sm-4">
+                        </fieldset>
 
-                        <h2>Where we are located</h2>
+                        <div class="row">
+                            <div class="col-md-12">
 
-                        <div id="map2" class="height-400 grayscale"></div>
+                                <input type="text" name="_gotcha" style="display:none" />
+                                <!--  on submit stay on page-->
+                                <!-- FIXME: fix before production -->
+                                <input type="hidden" name="_next" value="http://127.0.0.1:49480/Clients/Skyway/contact.html" />
+                                <!-- email subject-->
+                                <input type="hidden" name="_subject" value="NEW Quote From skywaypest.com" />
 
-                        <hr />
-
-                        <p>
-                            <span class="block"><strong><i class="fa fa-map-marker"></i> Address:</strong> 1226 Montauk Highway, Copiague, NY 11726</span>
-                            <span class="block"><strong><i class="fa fa-phone"></i> Phone:</strong> <a href="tel:631-789-9940">631-789-9940</a></span>
-                            <span class="block"><strong><i class="fa fa-envelope"></i> Email:</strong> <a href="mailto:skywaypest@gmail.com">skywaypest@gmail.com</a></span>
-                        </p>
-
-                    </div>
-                    <!-- /INFO -->
+                                <button type="submit" class="btn btn-primary"><i class="fa fa-check"></i> Request Quote</button>
+                            </div>
+                        </div>
+                    </form>
 
                 </div>
+                <!-- /FORM -->
+
+
+                <!-- INFO -->
+                <div class="col-md-4 col-sm-4">
+
+                    <h2>Where we are located</h2>
+
+                    <div id="map2" class="height-400 grayscale"></div>
+
+                    <hr />
+
+                    <p>
+                        <span class="block"><strong><i class="fa fa-map-marker"></i> Address:</strong> 1226 Montauk Highway, Copiague, NY 11726</span>
+                        <span class="block"><strong><i class="fa fa-phone"></i> Phone:</strong> <a href="tel:631-789-9940">631-789-9940</a></span>
+                        <span class="block"><strong><i class="fa fa-envelope"></i> Email:</strong> <a href="mailto:skywaypest@gmail.com">skywaypest@gmail.com</a></span>
+                    </p>
+
+                </div>
+                <!-- /INFO -->
 
             </div>
-        </section>
-        <!-- / -->
+
+        </div>
+    </section>
+    <!-- / -->
 
 
 
 
-        <!-- FOOTER -->
-        <footer id="footer">
-            <div class="container">
+    <!-- FOOTER -->
+    <footer id="footer">
+        <div class="container">
 
-                <div class="row">
+            <div class="row">
 
-                    <div class="col-md-3">
-                        <!-- Footer Logo -->
-                        <img class="footer-logo" src="assets/images/skyway/logoOnly.jpg" alt="Skyway Pest Management" />
-                    </div>
-                    <div class="col-md-4">
-                        <!-- Small Description -->
-                        <p>We are licensed and insured:
+                <div class="col-md-3">
+                    <!-- Footer Logo -->
+                    <img class="footer-logo" src="assets/images/skyway/logoOnly.jpg" alt="Skyway Pest Management" />
+                </div>
+                <div class="col-md-4">
+                    <!-- Small Description -->
+                    <p>We are licensed and insured:
 
-                            <br> New York State License No. (C- 1817616)
-                            <br> New York State DEC Reg. No (14839)</p>
+                        <br> New York State License No. (C- 1817616)
+                        <br> New York State DEC Reg. No (14839)</p>
 
-                        <!-- Contact Address -->
-                        <hr>
-                        <address>
+                    <!-- Contact Address -->
+                    <hr>
+                    <address>
 								<ul class="list-unstyled">
 									<li class="footer-sprite address">
 										1226 Montauk Highway<br>
@@ -335,64 +385,64 @@
 									</li>
 								</ul>
 							</address>
-                        <!-- /Contact Address -->
+                    <!-- /Contact Address -->
+
+                </div>
+
+
+
+
+
+                <div class="col-md-12">
+
+
+                    <!-- /Newsletter Form -->
+
+                    <!-- Social Icons -->
+                    <div class="margin-top-20">
+                        <a href="#" class="social-icon social-icon-border social-facebook pull-left" data-toggle="tooltip" data-placement="top" title="Facebook">
+
+                            <i class="icon-facebook"></i>
+                            <i class="icon-facebook"></i>
+                        </a>
+
+                        <a href="#" class="social-icon social-icon-border social-twitter pull-left" data-toggle="tooltip" data-placement="top" title="Twitter">
+                            <i class="icon-twitter"></i>
+                            <i class="icon-twitter"></i>
+                        </a>
+
+                        <a href="#" class="social-icon social-icon-border social-gplus pull-left" data-toggle="tooltip" data-placement="top" title="Google plus">
+                            <i class="icon-gplus"></i>
+                            <i class="icon-gplus"></i>
+                        </a>
+
+                        <a href="#" class="social-icon social-icon-border social-linkedin pull-left" data-toggle="tooltip" data-placement="top" title="Linkedin">
+                            <i class="icon-linkedin"></i>
+                            <i class="icon-linkedin"></i>
+                        </a>
+
+                        <a href="#" class="social-icon social-icon-border social-rss pull-left" data-toggle="tooltip" data-placement="top" title="Rss">
+                            <i class="icon-rss"></i>
+                            <i class="icon-rss"></i>
+                        </a>
 
                     </div>
-
-
-
-
-
-                    <div class="col-md-12">
-
-
-                        <!-- /Newsletter Form -->
-
-                        <!-- Social Icons -->
-                        <div class="margin-top-20">
-                            <a href="#" class="social-icon social-icon-border social-facebook pull-left" data-toggle="tooltip" data-placement="top" title="Facebook">
-
-                                <i class="icon-facebook"></i>
-                                <i class="icon-facebook"></i>
-                            </a>
-
-                            <a href="#" class="social-icon social-icon-border social-twitter pull-left" data-toggle="tooltip" data-placement="top" title="Twitter">
-                                <i class="icon-twitter"></i>
-                                <i class="icon-twitter"></i>
-                            </a>
-
-                            <a href="#" class="social-icon social-icon-border social-gplus pull-left" data-toggle="tooltip" data-placement="top" title="Google plus">
-                                <i class="icon-gplus"></i>
-                                <i class="icon-gplus"></i>
-                            </a>
-
-                            <a href="#" class="social-icon social-icon-border social-linkedin pull-left" data-toggle="tooltip" data-placement="top" title="Linkedin">
-                                <i class="icon-linkedin"></i>
-                                <i class="icon-linkedin"></i>
-                            </a>
-
-                            <a href="#" class="social-icon social-icon-border social-rss pull-left" data-toggle="tooltip" data-placement="top" title="Rss">
-                                <i class="icon-rss"></i>
-                                <i class="icon-rss"></i>
-                            </a>
-
-                        </div>
-                        <!-- /Social Icons -->
-
-                    </div>
+                    <!-- /Social Icons -->
 
                 </div>
 
             </div>
 
-            <div class="copyright">
-                <div class="container">
+        </div>
 
-                    &copy; All Rights Reserved, Skyway Pest Management
-                </div>
+        <div class="copyright">
+            <div class="container">
+
+                &copy; All Rights Reserved, Skyway Pest Management
             </div>
-        </footer>
-        <!-- /FOOTER -->
+        </div>
+    </footer>
+    <!-- /FOOTER -->
 
     </div>
     <!-- /wrapper -->
