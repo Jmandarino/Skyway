@@ -1943,6 +1943,7 @@ section.dark .inline-search form button:hover {
     color: #fff;
     position: relative;
     z-index: 10;
+    background-image: url('../images/skyway/assorted/truckclose2.jpg');
 }
 
 .parallax .btn-default {
@@ -1997,6 +1998,9 @@ section.dark .inline-search form button:hover {
     }
     .parallax h3 {
         font-size: 30px;
+    }
+    .parallax {
+        background-image: url('../images/skyway/assorted/logo.JPG');
     }
 }
 
