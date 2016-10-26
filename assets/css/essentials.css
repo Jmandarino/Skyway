@@ -173,6 +173,7 @@ a:hover,
 a:active {
     outline: 0;
     cursor: pointer;
+    color: #8ab933 !important; /* changed to fix ios issue */
 }
 
 p,
