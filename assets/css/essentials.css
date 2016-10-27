@@ -178,6 +178,12 @@ a:active {
 
 .phonenumber, .phonenumber:hover {
     color: #8ab933 !important; /* changed to fix ios issue */
+    text-decoration: none;
+}
+
+a[href^="tel"]{
+    color: #8ab933;
+    text-decoration: none;
 }
 
 p,
