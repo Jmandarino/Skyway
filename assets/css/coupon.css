@@ -5,4 +5,12 @@
     margin: 20px 20px 20px 20px;
     text-align: center;
     border: 3px dashed #ccc;
+    position: relative;
+}
+
+.coupon > p:last-child {
+
+    font-size: 11px;
+    position: absolute !important;
+    bottom: 0 !important;
 }
