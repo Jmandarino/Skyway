@@ -2,4 +2,6 @@ backup/*
 License
 Readme.md
 Template/*
+.DS_Store
+.idea
 
