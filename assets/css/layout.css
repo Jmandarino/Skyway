@@ -3480,7 +3480,7 @@ body.boxed #topBar.dark ul.top-links>li {
 
 @media only screen and (max-width: 500px) {
     #topNav div.nav-main-collapse {
-        max-height: 290px;
+        max-height: 400px;
         overflow-y: auto;
     }
 }
